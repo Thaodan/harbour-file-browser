@@ -197,5 +197,8 @@ DISTFILES += qml/*.qml \
 # following CONFIG line
 CONFIG += sailfishapp_i18n
 
+# Compatibility with Qt 5.6
+DEFINES += qmlWarning=qmlInfo
+
 # Build submodules
 include(libs/SortFilterProxyModel/SortFilterProxyModel.pri)
